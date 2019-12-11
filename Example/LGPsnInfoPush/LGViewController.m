@@ -7,6 +7,7 @@
 //
 
 #import "LGViewController.h"
+#import <LGPsnInfoPushFramework/LGPsnInfoPushFramework.h>
 
 @interface LGViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[LGPsnInfoPush defaultManager]openSocket];
 }
 
 - (void)didReceiveMemoryWarning

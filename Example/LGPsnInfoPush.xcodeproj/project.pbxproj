@@ -40,7 +40,7 @@
 		17227A7C50EBB5D10717961E /* Pods-LGPsnInfoPush_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGPsnInfoPush_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LGPsnInfoPush_Tests/Pods-LGPsnInfoPush_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		27556E3938EBB719805DDC1F /* Pods-LGPsnInfoPush_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGPsnInfoPush_Example.release.xcconfig"; path = "Target Support Files/Pods-LGPsnInfoPush_Example/Pods-LGPsnInfoPush_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3601694338937F75F3C53A5A /* Pods-LGPsnInfoPush_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGPsnInfoPush_Tests.release.xcconfig"; path = "Target Support Files/Pods-LGPsnInfoPush_Tests/Pods-LGPsnInfoPush_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5CE27CB25BFBD40EC10E6702 /* LGPsnInfoPush.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LGPsnInfoPush.podspec; path = ../LGPsnInfoPush.podspec; sourceTree = "<group>"; };
+		5CE27CB25BFBD40EC10E6702 /* LGPsnInfoPush.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LGPsnInfoPush.podspec; path = ../LGPsnInfoPush.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* LGPsnInfoPush_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGPsnInfoPush_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +60,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61832D0440B5D0382F97C935 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		61832D0440B5D0382F97C935 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F67E3823B61DB56EBBFFC4 /* Pods-LGPsnInfoPush_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LGPsnInfoPush_Example.debug.xcconfig"; path = "Target Support Files/Pods-LGPsnInfoPush_Example/Pods-LGPsnInfoPush_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		865CC3F18CD5DC037EAB93B1 /* Pods_LGPsnInfoPush_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGPsnInfoPush_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93B3B1BF969D52930DBC41E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		93B3B1BF969D52930DBC41E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E0974E34EE74EC82366AA436 /* Pods_LGPsnInfoPush_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LGPsnInfoPush_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				17227A7C50EBB5D10717961E /* Pods-LGPsnInfoPush_Tests.debug.xcconfig */,
 				3601694338937F75F3C53A5A /* Pods-LGPsnInfoPush_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +346,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LGPsnInfoPush_Example/Pods-LGPsnInfoPush_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LGPsnInfoPush/LGPsnInfoPush.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLDictionary/XMLDictionary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGPsnInfoPush.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLDictionary.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

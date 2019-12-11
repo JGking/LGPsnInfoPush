@@ -1,0 +1,6 @@
+framework module Pods_LGPsnInfoPush_Example {
+  umbrella header "Pods-LGPsnInfoPush_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

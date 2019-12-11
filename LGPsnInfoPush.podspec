@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LGPsnInfoPush'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of LGPsnInfoPush.'
 
 # This description is used to generate tags and improve search results.
@@ -22,21 +22,22 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/JGking/LGPsnInfoPush'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'JGking' => '610314675@qq.com' }
   s.source           = { :git => 'https://github.com/JGking/LGPsnInfoPush.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'LGPsnInfoPush/Classes/**/*'
+  s.ios.deployment_target = '9.0'
   
-  # s.resource_bundles = {
-  #   'LGPsnInfoPush' => ['LGPsnInfoPush/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  #需要包含的源文件
+  #s.source_files = 'LGPsnInfoPush/Classes/LGPsnInfoPushFramework.framework/Headers/*.{h}'
+  
+  #你的SDK路径
+  s.vendored_frameworks = 'LGPsnInfoPush/Classes/LGPsnInfoPushFramework.framework'
+  
+  s.dependency  'ReactiveObjC'
+  s.dependency  'XMLDictionary'
+  s.dependency  'AFNetworking'
+  s.dependency  'SocketRocket'
+  s.dependency  'MJExtension'
+  
 end

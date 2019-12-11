@@ -1,0 +1,6 @@
+framework module LGPsnInfoPush {
+  umbrella header "LGPsnInfoPush-umbrella.h"
+
+  export *
+  module * { export * }
+}
