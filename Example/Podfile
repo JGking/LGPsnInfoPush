@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LGPsnInfoPush_Example' do
+  pod 'LGPsnInfoPush', :path => '../'
+
+  target 'LGPsnInfoPush_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
