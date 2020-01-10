@@ -23,7 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 //Socket关闭了长链接
 - (void)LGPsnSocketDidClose;
 
-
+//socket消息的回调  推送类型： 1）通知公告 2）在线交流 3）系统消息 4）学习任务 5)日程提醒
+  //Socket+++++状态码：InfoDic[@"code"]=1004为->新消息推送
+- (void)webSocketDidReceiveMsg:(NSDictionary *)InfoDic;
 @end
 
 @interface LGPsnInfoPush : NSObject
