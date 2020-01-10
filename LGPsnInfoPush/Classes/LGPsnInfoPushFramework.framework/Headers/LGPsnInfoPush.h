@@ -52,8 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-- (void)closeSocket;//关闭连接
+- (void)closeSocket;//退出登录关闭连接
 - (void)openSocket;//开启连接
+
+- (void)closeSocketForBackground;//进入后台/锁屏关闭连接
+- (void)oppenWebSocket;//进入程序重连socket
 
 
 
